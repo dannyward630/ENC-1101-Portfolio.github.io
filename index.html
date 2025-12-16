@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENC 1101 Portfolio, Danny Ward</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: #0a0e27;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            background: #1a1f3a;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 50px;
+            border: 1px solid #2a3250;
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            color: #cbd5e0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .project-card {
+            background: #1a1f3a;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #2a3250;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px 25px;
+            color: white;
+        }
+
+        .project-number {
+            font-size: 0.85em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .project-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .project-type {
+            font-size: 0.95em;
+            opacity: 0.85;
+        }
+
+        .project-body {
+            padding: 25px;
+        }
+
+        .project-description {
+            color: #cbd5e0;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .project-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .skill-tag {
+            background: #0f1425;
+            color: #00d4ff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            border: 1px solid #2a3250;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-link:hover {
+            opacity: 0.9;
+        }
+
+        .reflection-section {
+            background: #1a1f3a;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #2a3250;
+        }
+
+        .reflection-section h2 {
+            color: #00d4ff;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        .reflection-content {
+            color: #cbd5e0;
+            line-height: 1.8;
+        }
+
+        .reflection-content p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #94a3b8;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ENC 1101 Course Portfolio</h1>
+        <p>A Semester of Rhetorical Analysis, Research, and Advocacy</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>About This Portfolio</h2>
+            <p>This portfolio showcases my progression through ENC 1101, from analyzing existing rhetorical strategies to creating my own research-driven advocacy work. Each project built upon skills from the previous one: close reading, research methodology, audience awareness, and multimodal composition.</p>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-number">PROJECT 1</div>
+                    <div class="project-title">Rhetorical Analysis</div>
+                    <div class="project-type">Literary Analysis</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        An analysis of Tolkien's Lay of Leithian from The Fellowship of the Ring, examining how archaic diction, ballad form, and layered symbolism compress the tragedy of The Silmarillion into a poignant moment at Weathertop.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Close Reading</span>
+                        <span class="skill-tag">Textual Analysis</span>
+                        <span class="skill-tag">Literary Context</span>
+                    </div>
+                    <a href="./project1-rhetorical-analysis.pdf" class="project-link" target="_blank">View Analysis</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-number">PROJECT 2</div>
+                    <div class="project-title">Research Proposal & Design Plan</div>
+                    <div class="project-type">Academic Research</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        A research proposal investigating the illusion of objectivity in data-driven decision-making systems, proposing to examine how human assumptions shape algorithmic outputs in criminal justice, finance, and social media.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Research Design</span>
+                        <span class="skill-tag">Advocacy</span>
+                        <span class="skill-tag">Contemporary Issues</span>
+                    </div>
+                    <a href="./project2-research-proposal.pdf" class="project-link" target="_blank">View Proposal</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-number">PROJECT 3</div>
+                    <div class="project-title">Multimodal Advocacy Website</div>
+                    <div class="project-type">Digital Advocacy</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        A public-facing website advocating for algorithmic transparency and data literacy. Combines research from criminal justice, credit scoring, and social media with images, diagrams, and data visualizations to make complex issues accessible.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Multimodal Composition</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Public Communication</span>
+                        <span class="skill-tag">Web Design</span>
+                    </div>
+                    <a href="./project3-advocacy-website/index.html" class="project-link" target="_blank">Visit Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reflection-section">
+            <h2>Course Reflection</h2>
+            <div class="reflection-content">
+                <!-- Your reflective essay will go here -->
+                <p><em>Click below to read the full reflective essay analyzing composing choices and growth throughout the semester.</em></p>
+                <a href="./project4-reflection-essay.pdf" class="project-link" target="_blank" style="margin-top: 20px;">Read Reflection</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>ENC 1101 Course Portfolio | Fall 2025</p>
+    </footer>
+</body>
+</html>
